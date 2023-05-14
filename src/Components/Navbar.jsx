@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { BsCartFill } from 'react-icons/bs';
 
 
 function Navbar() {
-  const navigate = useNavigate();
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -61,7 +60,7 @@ function Navbar() {
           <Link to="/drop-off-points">Drop-Off Points</Link>
           </li>
           <li>
-          <Link to="/featured-post">Companies</Link>
+          <Link to="/recycling-plants">Companies</Link>
           </li>
           <li>
           <Link to="/cart">

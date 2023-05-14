@@ -27,7 +27,7 @@ export const Cart = () => {
       <div className="cart">
         {shopPost.map((post) => {
           if (cartItems[post.id] !== 0) {
-            return <CartItem data={post} />;
+            return <CartItem key={post.id} data={post} />;
           }
         })}
       </div>
@@ -39,7 +39,7 @@ export const Cart = () => {
           <button
             onClick={() => {
               checkout();
-              navigate("/checkout");
+              navigate("/");
             }}
           >
             {" "}

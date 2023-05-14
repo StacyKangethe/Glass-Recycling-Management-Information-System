@@ -1,8 +1,6 @@
-import { Button } from "@mui/material";
 import React from "react";
 import video from '../assets/video.mp4';
-import MovingText from 'react-moving-text';
-import { useState } from "react";
+import MovingText from "react-moving-text";
 
 
 function Hero() {
@@ -11,7 +9,7 @@ function Hero() {
             <div className="overlay"></div>
             <video src={video} autoPlay loop muted />
          
-                <div className="container">    
+            <div className="container"> 
                     <MovingText  className="heading"
                         type="typewriter"
                         duration="1600ms"
@@ -27,7 +25,7 @@ function Hero() {
                         'ON',
                         'YOU'
                         ]} />   
-                </div>
+            </div>    
         </div>
         
 
